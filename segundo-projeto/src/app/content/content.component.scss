@@ -17,6 +17,8 @@
         font-size: 70px;
     }
 
+    h2 {}
+
     small {
         color: blue;
         font-weight: 300;
@@ -35,7 +37,9 @@
     }
 
     button:hover {
-        background-color: #000000;
+        border: 1px solid blue;
+        background-color: black;
+        color: blue;
         scale: 1.1;
         transition: 0.5s ease-in-out;
         cursor: pointer;

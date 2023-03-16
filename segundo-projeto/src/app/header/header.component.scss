@@ -1,60 +1,64 @@
 .navbar-content {
 
-    background-color: rgb(1, 0, 0);
+  background-color: rgb(1, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  height: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+
+  div {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-left: 20px;
+  }
+
+  ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-self: flex-end;
+    list-style: none;
     align-items: center;
+  }
+
+  li {
     padding: 10px;
-    height: 60px;
-    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  li:hover:not(:last-child) {
+    border-bottom: 1px solid blue;
+    transition: 0.6s ease-in-out;
+  }
+
+  a {
+    text-decoration: none;
     color: white;
+  }
 
-    div {
-        text-transform: uppercase;
-        font-weight: bolder;
-        font-size: 20px;
-    }
+  button {
+    padding: 5px;
+    height: 35px;
+    width: 95px;
+    border: 1px solid blue;
+    background-color: black;
+    color: blue;
+    font-weight: 400;
+    border-radius: 2px;
+  }
 
-    ul {
-        display: flex;
-        flex-direction: row;
-        justify-self: flex-end;
-        list-style: none;
-        align-items: center;
-    }
+  button:hover {
+    background-color: #0000ad;
+    border: none;
+    color: white;
+    scale: 1.1;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
 
-    li {
-        padding: 10px;
-    }
-
-    li:hover:not(:last-child) {
-        border-bottom: 1px solid white;
-    }
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-
-    button {
-        padding: 5px;
-        height: 35px;
-        width: 95px;
-        background-color: #0000ad;
-        border: none;
-        color: white;
-        font-weight: 400;
-        border-radius: 2px;
-    }
-
-    button:hover {
-        background-color: #000000;
-        scale: 1.1;
-        transition: 0.5s ease-in-out;
-        cursor: pointer;
-    }
-
-     // Adicionando regras de mídia para tornar o código responsivo para dispositivos móveis
+  // Adicionando regras de mídia para tornar o código responsivo para dispositivos móveis
   @media screen and (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -83,5 +87,3 @@
     }
   }
 }
-
-
