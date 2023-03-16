@@ -30,7 +30,7 @@ Estilize o cabeçalho e rodapé do seu site.
 ## Clone este repositório através do GIT:
 
 ```sh
-$ git clone https://github.com/brwnalima/Angular-exDois
+$ git clone https://github.com/brwnalima/Angular-2W-exUm
 ```
 
 ## 👩🏾‍💻 Digite em seu terminal:
