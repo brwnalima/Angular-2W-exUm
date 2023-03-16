@@ -38,7 +38,8 @@
 
     button {
         padding: 5px;
-        width: 80px;
+        height: 35px;
+        width: 95px;
         background-color: #0000ad;
         border: none;
         color: white;
@@ -52,4 +53,35 @@
         transition: 0.5s ease-in-out;
         cursor: pointer;
     }
+
+     // Adicionando regras de mídia para tornar o código responsivo para dispositivos móveis
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 5px;
+
+    div {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-top: 10px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    li {
+      padding: 5px;
+      margin-bottom: 5px;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
 }
+
+
